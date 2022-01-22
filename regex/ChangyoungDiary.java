@@ -12,6 +12,7 @@ public class ChangyoungDiary {
     String origin = "";
     try {
       String line = br.readLine();
+      
       for (int i=0; i<line.length(); i++) {
         String s = Character.toString(line.charAt(i));
         if (s.replaceAll("[aeiou]", "").isEmpty()) {
