@@ -23,3 +23,14 @@
 #   if skip_index == -1: count += 1
 
 # print(count)
+
+
+croatia_alphabet_list = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
+count = 0
+
+word = input()
+
+for croatia_alphabet in croatia_alphabet_list:
+  word = word.replace(croatia_alphabet, "*")
+
+print(len(word))
