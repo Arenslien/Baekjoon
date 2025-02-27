@@ -29,8 +29,6 @@ int main() {
     std::cout.fill('0');
     std::cout << cnt_W << std::endl;
   }
-
-
-
+  
   return 0;
 }
