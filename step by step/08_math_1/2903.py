@@ -4,7 +4,7 @@ N = int(input())
 
 current_point = 2
 
-for i in range(N):
+for _ in range(N):
   current_point += current_point-1
 
 print(current_point ** 2)
