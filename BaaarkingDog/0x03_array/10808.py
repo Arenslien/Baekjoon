@@ -10,4 +10,3 @@ for alphabet in S:
 for alphabet_count in alphabet_array:
   print(alphabet_count, end=" ")
 
-
