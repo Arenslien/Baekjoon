@@ -12,7 +12,6 @@ int main() {
     if (num % 2) {
       sum += num;
       if (min > num) min = num;
-
     }
   }
 
