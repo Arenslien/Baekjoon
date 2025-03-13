@@ -9,4 +9,4 @@ for i in range(5):
 
 nums = sorted(nums)
 
-print(f"{sum/5}\n{nums[2]}")
+print(f"{int(sum/5)}\n{nums[2]}")
