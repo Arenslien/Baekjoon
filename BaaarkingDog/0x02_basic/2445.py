@@ -1,7 +1,5 @@
 # 2445: 별 찍기 - 8
 
-#include <iostream>
-
 N = int(input())
 step = 1
 i = 1
