@@ -15,9 +15,6 @@ int main() {
       int temp = cards[a+j-1];
       cards[a+j-1] = cards[b-j-1];
       cards[b-j-1] = temp;
-
-      // 5 10(5): 5(a) 6(a+1) 7(a+2) 8(b-2) 9(b-1) 10(b)
-      // 6 10(4): 6(a) 7(a+1) 8(a+2, b-2) 9(b-1) 10(b)
     }
   }
 
