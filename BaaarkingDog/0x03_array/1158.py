@@ -1,18 +1,17 @@
 # 1158: 요세푸스 문제
 
-N, K = list(map(int, input().split()))
-cnt = 1
+from collections import deque
 
-q = [i+1 for i in range(N)]
+N, K = list(map(int, input().split()))
+
+q = deque(range(1, N+1)) # [i+1 for i in range(N)]
 
 print('<', end="")
 
+cnt = 1
 while (len(q) != 1):
-  front = q[0]
-  del q[0]
-
-  if (cnt % K != 0): q.append(front)
-  else: print(f"{front}, ", end="")
+  if (cnt % K != 0): q.append(q.popleft())
+  else: print(f"{q.popleft()}, ", end="")
 
   cnt += 1
 
