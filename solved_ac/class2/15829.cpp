@@ -8,7 +8,7 @@ using namespace std;
 const long long M = 1234567891;
 
 long long my_pow(int n, int step) {
-  int value = 1;
+  long long value = 1;
   for (int i=0; i<step; i++) value = (value * n) % M;
   return value;
 }
