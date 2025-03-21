@@ -11,7 +11,6 @@ int main() {
     int k, n;
     cin >> k >> n;
 
-
     int apartment[k+1][n];
     for (int i=0; i<k; i++) {
       int sum = 0;
@@ -26,6 +25,6 @@ int main() {
 
     cout << apartment[k][n-1] << '\n';
   }
-  
+
   return 0;
 }
