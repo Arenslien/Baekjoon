@@ -8,5 +8,6 @@ for _ in range(N):
   cnt[int(input())-1] += 1
 
 for i in range(10000):
-  for j in range(cnt[i]):
-    print(i+1)
+  if (cnt[i] != 0):
+    for j in range(cnt[i]):
+      print(i+1)
