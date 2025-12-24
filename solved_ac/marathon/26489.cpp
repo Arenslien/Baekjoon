@@ -13,6 +13,7 @@ int main() {
   int cnt = 0;
   string line;
 
+  // EOF(End Of File), 입력 종료
   while (getline(cin, line)) cnt++;
 
   cout << cnt;
