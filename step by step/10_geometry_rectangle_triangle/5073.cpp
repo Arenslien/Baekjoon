@@ -1,8 +1,8 @@
 // Authored by : Arenslien
-// BOJ : 10101번 - 삼각형 외우기
+// BOJ : 5073번 - 삼각형과 세 변
 
 #include <iostream>
-#include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -10,20 +10,18 @@ int main()
 {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
-
-  string s;
+  
   while (true) {
-      int a1, a2, a3;
-      cin >> a1 >> a2 >> a3;
+    int a[3] = {};
+    cin >> a[0] >> a[1] >> a[2];
+    sort(a, a+3);
 
-      if (a1 + a2 + a3 == 0) 
-        break;
-      else if (a1 == a2 && a2 == a3)
-        cout << "Equilateral";
-      else if (a1 == a2 || a2 == a3 || a3 == a1)
-        cout << "Isosceles";
-      else
-        cout << "Scalene";
+    if (a[0] + a[1] + a[2] == 0) return 0;
+    else if (a[2] >= a[0] + a[1]) cout << "Invalid";
+    else if (a[0] == a[1] && a[1] == a[2]) cout << "Equilateral";
+    else if (a[0] == a[1] || a[1] == a[2] || a[2] == a[0]) cout << "Isosceles";
+    else cout << "Scalene";
+    cout << '\n';
   }
 
   return 0;
