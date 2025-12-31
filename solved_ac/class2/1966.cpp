@@ -16,7 +16,7 @@ int main() {
 
     queue<int> q;
     for (int i=0; i<N; i++) q.push(i);
-
+    // q.front() dml
 
   }
 
@@ -33,3 +33,7 @@ int main() {
 // 4 2
 // 1 2 3 4
 // 0 1 2 3
+// 
+
+// 중요도?
+// 
